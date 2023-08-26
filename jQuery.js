@@ -1,30 +1,6 @@
-// This is the logic of the game that needs to be followed 
-// click on start/reset button 
-  //are we playing
-    // yes
-      // reload page
-    // no
-      // show trials left
-      // change button text to reset game
-
-      // 1. create a random fruits
-      // define a random speed
-      // 2.move the fruit down one step in loop every 30 seconds
-          // is fruits too low
-              // no repeat no 2
-              // yes --> any trials left
-                  // yes: repeat no.1
-                  // no: show game over
-                  // button text to start game
-
-                  
-// slice the fruits **** After first page executed 
-    // play sound
-    // explode fruit
-
-
-
-
+//IMPORTANT: This game still needs more work. 
+//IMPORTANT: Uncomplete 
+//Author: Najib R
     // variable change mode
     var playing = false;
 
@@ -125,14 +101,13 @@
 
     // random fruits (buggy should be fixed later on!!!)
     function chooseFruit(){
-      $("#fruit1").attr('src', 'cartoon images/' +fruits[Math.round([20*Math.random()])]+ '.png');
-      console.log("The fruits is: "+fruits[Math.round([fruits.length*Math.random()])+1]);
+      $("#fruit1").attr('src', 'cartoon images/' +fruits[Math.round([30*Math.random()])+1]+ '.png');
 
-      if($("#fruit1").attr('src', 'cartoon images/' +fruits[Math.round([20*Math.random()])]+ '.png') === $("#fruit1").attr('src', 'cartoon images/' +fruits[Math.round([37*Math.random()]+1)]+ '.png')) {
-        $("#fruit1").attr('src', 'cartoon images/' +fruits[Math.round([20*Math.random()])]+ '.png');
-      console.log("The fruits is: "+fruits[Math.round([20*Math.random()])]);
+      // if($("#fruit1").attr('src', 'cartoon images/' +fruits[Math.round([20*Math.random()])]+ '.png') === $("#fruit1").attr('src', 'cartoon images/' +fruits[Math.round([37*Math.random()]+1)]+ '.png')) {
+      //   $("#fruit1").attr('src', 'cartoon images/' +fruits[Math.round([20*Math.random()])]+ '.png');
+      // console.log("The fruits is: "+fruits[Math.round([20*Math.random()])]);
 
-      }
+      // }
     }
 
 
