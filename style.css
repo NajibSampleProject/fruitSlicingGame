@@ -1,0 +1,149 @@
+html{
+  background: radial-gradient(circle,#fff, #ccc);
+}
+
+.life{
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+}
+
+#container{
+  height: 800px;
+  width: 900px;
+  background-color: #9dd2ea;
+  margin: 35px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px 0px #009de4;
+  position: relative;
+}
+
+#score{
+  background-color: #F1ff92;
+  color: #888e5f;
+  padding: 10px;
+  float: right;
+  border-radius: 5px;
+  position: absolute;
+  left: 850px;
+  box-shadow: 0px 4px;
+  color: #9da853;
+}
+
+.fruit{
+  display: none;
+  position: absolute;
+}
+
+#correct{
+  position: absolute;
+  left: 260px;
+  background-color: #42e252;
+  color: white;
+  padding: 11px;
+  display: none;
+}
+
+#wrong{
+  position: absolute;
+  left: 260px;
+  background-color: red;
+  color: white;
+  padding: 11px;
+  display: none;
+}
+
+#fruitContainers{
+  width: 800px;
+  height: 650px;
+  background-color:white;
+  margin: 50px auto 10px auto;
+  box-shadow: 0px 4px #535aa8;
+  font-size: 100px;
+  text-align: center;
+  font-family: cursive,sans-serif;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#instruction{
+  width: 450px;
+  height: 50px;
+  margin: 10px 250px;
+  background-color: #da8b3d;
+  box-shadow: 0px 4px grey;
+  font-size: 20px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 10px;
+}
+
+
+
+
+
+.box:hover, #startreset:hover{
+  background-color: #0c89F6;
+  color: white;
+  box-shadow: 0px 4px #6b54d3;
+}
+
+.box:active, #startreset:active{
+  box-shadow: 0px 0px #79787e ;
+  top: 4px;
+}
+
+#startreset{
+  width: 78px;
+  background-color: rgba(255,255,255, 0.5);
+  padding: 8px;
+  margin: 0 auto;
+  box-shadow: 0px 4px grey;
+  top: 4px;
+  position: relative;
+  border-radius: 5px;
+}
+
+#trialsleft{
+  /* width: 200px; */
+  /* padding: 10px; */
+  position: absolute;
+  background-color: #F1ff92;
+  top:20px;
+  left: 20px;
+  box-shadow: 0px 4px grey;
+  border-radius: 5px;
+  display: none;
+}
+
+#gameover{
+  /* border: 1px solid black; */
+  width: 700px;
+  height: 400px;
+  background: linear-gradient(#F3CA6B, #f3706c);
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 200px;
+  left: 120px;
+  border-radius: 10px;
+  z-index: 2;
+  display: none;
+}
+
+footer{
+  background-color: #9dd2ea;
+  margin-top: auto;
+  padding: 20px;
+  /* border-radius: 5px; */
+  text-align: center;
+  /* width: 100%; */
+  left: 0;
+  /* bottom: 20; */
+  font-size: 14px;
+}
